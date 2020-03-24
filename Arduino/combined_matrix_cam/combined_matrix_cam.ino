@@ -15,10 +15,10 @@
 #define CLOCKPIN 5
 
 //low range of the sensor (this will be blue on the screen)
-#define MINTEMP 22
+#define MINTEMP 22//22
 
 //high range of the sensor (this will be red on the screen)
-#define MAXTEMP 34
+#define MAXTEMP 32//34
 Adafruit_DotStarMatrix matrix = Adafruit_DotStarMatrix(
                                   8, 8, DATAPIN, CLOCKPIN,
                                   DS_MATRIX_TOP     + DS_MATRIX_RIGHT +
@@ -28,72 +28,73 @@ Adafruit_DotStarMatrix matrix = Adafruit_DotStarMatrix(
 const uint16_t colors[] = {
   //RGB RED TO BLUE IN 64 COLORS
 
-  matrix.Color( 255 , 0 , 0 ),
-  matrix.Color( 251 , 0 , 4 ),
-  matrix.Color( 247 , 0 , 8 ),
-  matrix.Color( 243 , 0 , 12 ),
-  matrix.Color( 240 , 0 , 15 ),
-  matrix.Color( 236 , 0 , 19 ),
-  matrix.Color( 232 , 0 , 23 ),
-  matrix.Color( 228 , 0 , 27 ),
-  matrix.Color( 224 , 0 , 31 ),
-  matrix.Color( 220 , 0 , 35 ),
-  matrix.Color( 216 , 0 , 39 ),
-  matrix.Color( 213 , 0 , 43 ),
-  matrix.Color( 209 , 0 , 46 ),
-  matrix.Color( 205 , 0 , 50 ),
-  matrix.Color( 201 , 0 , 54 ),
-  matrix.Color( 197 , 0 , 58 ),
-  matrix.Color( 193 , 0 , 62 ),
-  matrix.Color( 189 , 0 , 66 ),
-  matrix.Color( 185 , 0 , 70 ),
-  matrix.Color( 182 , 0 , 73 ),
-  matrix.Color( 178 , 0 , 77 ),
-  matrix.Color( 174 , 0 , 81 ),
-  matrix.Color( 170 , 0 , 85 ),
-  matrix.Color( 166 , 0 , 89 ),
-  matrix.Color( 162 , 0 , 93 ),
-  matrix.Color( 158 , 0 , 97 ),
-  matrix.Color( 155 , 0 , 100 ),
-  matrix.Color( 151 , 0 , 104 ),
-  matrix.Color( 147 , 0 , 108 ),
-  matrix.Color( 143 , 0 , 112 ),
-  matrix.Color( 139 , 0 , 116 ),
-  matrix.Color( 135 , 0 , 120 ),
-  matrix.Color( 131 , 0 , 124 ),
-  matrix.Color( 128 , 0 , 128 ),
-  matrix.Color( 124 , 0 , 131 ),
-  matrix.Color( 120 , 0 , 135 ),
-  matrix.Color( 116 , 0 , 139 ),
-  matrix.Color( 112 , 0 , 143 ),
-  matrix.Color( 108 , 0 , 147 ),
-  matrix.Color( 104 , 0 , 151 ),
-  matrix.Color( 100 , 0 , 155 ),
-  matrix.Color( 97 , 0 , 158 ),
-  matrix.Color( 93 , 0 , 162 ),
-  matrix.Color( 89 , 0 , 166 ),
-  matrix.Color( 85 , 0 , 170 ),
-  matrix.Color( 81 , 0 , 174 ),
-  matrix.Color( 77 , 0 , 178 ),
-  matrix.Color( 73 , 0 , 182 ),
-  matrix.Color( 70 , 0 , 185 ),
-  matrix.Color( 66 , 0 , 189 ),
-  matrix.Color( 62 , 0 , 193 ),
-  matrix.Color( 58 , 0 , 197 ),
-  matrix.Color( 54 , 0 , 201 ),
-  matrix.Color( 50 , 0 , 205 ),
-  matrix.Color( 46 , 0 , 209 ),
-  matrix.Color( 43 , 0 , 213 ),
-  matrix.Color( 39 , 0 , 216 ),
-  matrix.Color( 35 , 0 , 220 ),
-  matrix.Color( 31 , 0 , 224 ),
-  matrix.Color( 27 , 0 , 228 ),
-  matrix.Color( 23 , 0 , 232 ),
-  matrix.Color( 19 , 0 , 236 ),
-  matrix.Color( 15 , 0 , 240 ),
-  matrix.Color( 12 , 0 , 243 ),
-  matrix.Color( 8 , 0 , 247 ),
-  matrix.Color( 4 , 0 , 251 )
+
+
+
+ matrix.Color( 255 , 0 , 0 ),
+ matrix.Color( 247 , 8 , 0 ),
+ matrix.Color( 239 , 16 , 0 ),
+ matrix.Color( 231 , 24 , 0 ),
+ matrix.Color( 223 , 32 , 0 ),
+ matrix.Color( 215 , 40 , 0 ),
+ matrix.Color( 207 , 48 , 0 ),
+ matrix.Color( 199 , 56 , 0 ),
+ matrix.Color( 191 , 64 , 0 ),
+ matrix.Color( 183 , 72 , 0 ),
+ matrix.Color( 175 , 80 , 0 ),
+ matrix.Color( 167 , 88 , 0 ),
+ matrix.Color( 159 , 96 , 0 ),
+ matrix.Color( 151 , 104 , 0 ),
+ matrix.Color( 143 , 112 , 0 ),
+ matrix.Color( 135 , 120 , 0 ),
+ matrix.Color( 128 , 128 , 0 ),
+ matrix.Color( 120 , 135 , 0 ),
+ matrix.Color( 112 , 143 , 0 ),
+ matrix.Color( 104 , 151 , 0 ),
+ matrix.Color( 96 , 159 , 0 ),
+ matrix.Color( 88 , 167 , 0 ),
+ matrix.Color( 80 , 175 , 0 ),
+ matrix.Color( 72 , 183 , 0 ),
+ matrix.Color( 64 , 191 , 0 ),
+ matrix.Color( 56 , 199 , 0 ),
+ matrix.Color( 48 , 207 , 0 ),
+ matrix.Color( 40 , 215 , 0 ),
+ matrix.Color( 32 , 223 , 0 ),
+ matrix.Color( 24 , 231 , 0 ),
+ matrix.Color( 16 , 239 , 0 ),
+ matrix.Color( 8 , 247 , 0 ),
+ matrix.Color( 0 , 255 , 0 ),
+ matrix.Color( 0 , 247 , 8 ),
+ matrix.Color( 0 , 239 , 16 ),
+ matrix.Color( 0 , 231 , 24 ),
+ matrix.Color( 0 , 223 , 32 ),
+ matrix.Color( 0 , 215 , 40 ),
+ matrix.Color( 0 , 207 , 48 ),
+ matrix.Color( 0 , 199 , 56 ),
+ matrix.Color( 0 , 191 , 64 ),
+ matrix.Color( 0 , 183 , 72 ),
+ matrix.Color( 0 , 175 , 80 ),
+ matrix.Color( 0 , 167 , 88 ),
+ matrix.Color( 0 , 159 , 96 ),
+ matrix.Color( 0 , 151 , 104 ),
+ matrix.Color( 0 , 143 , 112 ),
+ matrix.Color( 0 , 135 , 120 ),
+ matrix.Color( 0 , 128 , 128 ),
+ matrix.Color( 0 , 120 , 135 ),
+ matrix.Color( 0 , 112 , 143 ),
+ matrix.Color( 0 , 104 , 151 ),
+ matrix.Color( 0 , 96 , 159 ),
+ matrix.Color( 0 , 88 , 167 ),
+ matrix.Color( 0 , 80 , 175 ),
+ matrix.Color( 0 , 72 , 183 ),
+ matrix.Color( 0 , 64 , 191 ),
+ matrix.Color( 0 , 56 , 199 ),
+ matrix.Color( 0 , 48 , 207 ),
+ matrix.Color( 0 , 40 , 215 ),
+ matrix.Color( 0 , 32 , 223 ),
+ matrix.Color( 0 , 24 , 231 ),
+ matrix.Color( 0 , 16 , 239 ),
+ matrix.Color( 0 , 8 , 247 )
 };
 Adafruit_AMG88xx amg;
 unsigned long delayTime;
@@ -103,7 +104,7 @@ int WIDTH = 8;
 int HEIGHT = 8;
 void setup() {
   matrix.begin();
-  matrix.setBrightness(40);
+  matrix.setBrightness(10);
   Serial.begin(9600);
   Serial.println(F("AMG88xx thermal camera!"));
 
@@ -127,7 +128,7 @@ void loop() { // put your main code here, to run repeatedly:
   amg.readPixels(pixels);
 
   for (int i = 0; i < AMG88xx_PIXEL_ARRAY_SIZE; i++) {
-    int colorIndex = map(pixels[i], 15, 38, 0,63);
+    int colorIndex = map(pixels[i], MINTEMP, MAXTEMP, 0,63);
     colorIndex = constrain(colorIndex, 0,64);
     draw_pixel(i,colorIndex);
   // print_data(i,colorIndex);
