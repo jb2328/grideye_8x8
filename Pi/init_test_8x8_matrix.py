@@ -7,7 +7,7 @@ import board
 import adafruit_dotstar as dotstar
  
 # On-board DotStar for boards including Gemma, Trinket, and ItsyBitsy
-dots = dotstar.DotStar(board.APA102_SCK, board.APA102_MOSI, 1, brightness=0.2)
+dots = dotstar.DotStar(board.SCK, board.MOSI, 64, brightness=0.5)
  
 # Using a DotStar Digital LED Strip with 30 LEDs connected to hardware SPI
 # dots = dotstar.DotStar(board.SCK, board.MOSI, 30, brightness=0.2)
@@ -25,6 +25,7 @@ def random_color():
 # MAIN LOOP
 n_dots = len(dots)
 while True:
+    #print("hello")
     # Fill each dot with a random color
     for dot in range(n_dots):
         dots[dot] = (random_color(), random_color(), random_color())
