@@ -2,7 +2,7 @@ import pycom
 import time
 
 pycom.heartbeat(False)
-for cycles in range(10): # stop after 10 cycles
+for cycles in range(1): # stop after 10 cycles
     pycom.rgbled(0x007f00) # green
     time.sleep(1)
     pycom.rgbled(0x7f7f00) # yellow
