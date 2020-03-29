@@ -33,25 +33,33 @@
 
 #include <lmic.h>
 #include <hal/hal.h>
+#include <secrets.h>
 #include <SPI.h>
-
 
 // This EUI must be in little-endian format, so least-significant-byte
 // first. When copying an EUI from ttnctl output, this means to reverse
 // the bytes. For TTN issued EUIs the last bytes should be 0xD5, 0xB3,
 // 0x70.
-static const u1_t PROGMEM APPEUI[8] = {  0x65, 0xAB, 0x01, 0xD0, 0x7E, 0xD5, 0xB3, 0x70  };
-void os_getArtEui (u1_t* buf) { memcpy_P(buf, APPEUI, 8);}
+static const u1_t PROGMEM APPEUI[8] = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
+void os_getArtEui (u1_t* buf) {
+  memcpy_P(buf, APPEUI, 8);
+}
 
 // This should also be in little endian format, see above.
-static const u1_t PROGMEM DEVEUI[8] = { 0xED, 0x57, 0x11, 0x00, 0x00, 0xB6, 0x76, 0x98 };
-void os_getDevEui (u1_t* buf) { memcpy_P(buf, DEVEUI, 8);}
+static const u1_t PROGMEM DEVEUI[8] = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
+void os_getDevEui (u1_t* buf) {
+  memcpy_P(buf, DEVEUI, 8);
+}
 
 // This key should be in big endian format (or, since it is not really a
 // number but a block of memory, endianness does not really apply). In
 // practice, a key taken from ttnctl can be copied as-is.
-static const u1_t PROGMEM APPKEY[16] = { 0xA4, 0x39, 0x1D, 0x44, 0xBA, 0xBC, 0xE8, 0xB6, 0x97, 0x60, 0x1C, 0xE0, 0x9E, 0x5C, 0x93, 0x09 };
+// The key shown here is the semtech default key.
+static const u1_t PROGMEM APPKEY[16] = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
+
 void os_getDevKey (u1_t* buf) {  memcpy_P(buf, APPKEY, 16);}
+void os_getDevEui (u1_t* buf) { memcpy_P(buf, DEVEUI, 8);}
+void os_getArtEui (u1_t* buf) { memcpy_P(buf, APPEUI, 8);}
 
 static uint8_t mydata[] = "Hello, world!";
 static osjob_t sendjob;
