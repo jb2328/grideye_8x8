@@ -12,7 +12,9 @@ import pycom
 
 ##initiate as STA
 wlan = WLAN(mode=WLAN.STA)
-wlan.antenna(WLAN.EXT_ANT)
+wlan.antenna(WLAN.INT_ANT)
+#wlan.antenna(WLAN.EXT_ANT)
+
 nets = wlan.scan()
 for net in nets:
 	print(net)
@@ -21,11 +23,11 @@ for net in nets:
 
 wlan=WLAN()
 
-wlan.antenna(WLAN.EXT_ANT)
-
-wlan.init(mode=WLAN.AP, ssid='wipy-wlan', auth=(WLAN.WPA2,'www.wipy.io'), channel=7, antenna=WLAN.EXT_ANT)
-wlan.antenna(WLAN.EXT_ANT)
-
+wlan.antenna(WLAN.INT_ANT)
+#wlan.antenna(WLAN.EXT_ANT)
+wlan.init(mode=WLAN.AP, ssid='wipy-wlan', auth=(WLAN.WPA2,'www.wipy.io'), channel=7, antenna=WLAN.INT_ANT)
+wlan.antenna(WLAN.INT_ANT)
+#wlan.antenna(WLAN.EXT_ANT)
 print("done")
 pycom.heartbeat(False)
 
