@@ -3,6 +3,8 @@ void setup() {
   stroke(255);
   background(51);
   drawHSB();
+  //drawRGB();
+
 
 }
 void draw() {

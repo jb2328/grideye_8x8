@@ -44,6 +44,10 @@ That can be pasted into the code.
 --- 
 
 ### gifs
+#### Raspberry Pi: 
+
+![RPi](images/RPi.gif "RPi-amg833")
+
 #### Arduino Uno:
 
 ![Arduino](images/Arduino.gif "Arduino-amg833")
@@ -51,10 +55,6 @@ That can be pasted into the code.
 #### Adafruit Feather: 
 
 ![Feather](images/Feather.gif "Feather-amg833")
-
-#### Raspberry Pi: 
-
-![RPi](images/RPi.gif "RPi-amg833")
 
 ##### Lopy4:
  tested sensor only, no LED matrix test.
