@@ -1,27 +1,26 @@
-### Pycom lopy 4 
+### Pycom Lopy 4 
 
-#### Lopy4 useful links
+Please follow [Peter Hinch's excellent tutorial](https://github.com/peterhinch/micropython-amg88xx).
 
-[Initial config]
-URL=https://github.com/ttn-liv/devices/wiki/Getting-started-with-the-PyCom-LoPy
+#### Other useful links to get Lopy4 set up
 
-[Using boot.py and main.py]
-URL=https://github.com/johnmcdnz/LoPy/blob/master/Wifi%20config.md
+[Initial config](https://github.com/ttn-liv/devices/wiki/Getting-started-with-the-PyCom-LoPy)
 
-[Establishing FTP conneciton]
-URL=https://docs.pycom.io/gettingstarted/programming/ftp/
-/flash is used for ftp communications
+[Using boot.py and main.py](https://github.com/johnmcdnz/LoPy/blob/master/Wifi%20config.md)
 
-[Terminal over Wifi using telnet]
-URL=https://docs.pycom.io/gettingstarted/programming/repl/telnet/
+[Establishing an FTP connection](https://docs.pycom.io/gettingstarted/programming/ftp/)
+/flash/ directory is used for ftp communications with Lopy4.
 
-[Micropython port of Adafruit CircuitPython libs]
-URL=https://github.com/peterhinch/micropython-amg88xx
+[Terminal over Wifi using telnet](https://docs.pycom.io/gettingstarted/programming/repl/telnet/) for more efficient testing of code.
 
-#### Circuit python dependencies
-https://github.com/adafruit/Adafruit_CircuitPython_AMG88xx
+[Micropython port of Adafruit CircuitPython libs](https://github.com/peterhinch/micropython-amg88xx)
 
-#### I2C
+#### Circuit Python dependencies
 
-https://docs.pycom.io/firmwareapi/pycom/machine/i2c/
-https://docs.pycom.io/firmwareapi/pycom/machine/spi/
+[Circuit Python port for AMG8833](https://github.com/adafruit/Adafruit_CircuitPython_AMG88xx) 
+Did not work due to failing import `OrderedDict`.
+
+#### I2C and SPI interfaces
+[I2C](https://docs.pycom.io/firmwareapi/pycom/machine/i2c/)
+
+[SPI](https://docs.pycom.io/firmwareapi/pycom/machine/spi/)

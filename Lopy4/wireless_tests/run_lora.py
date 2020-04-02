@@ -2,7 +2,7 @@ from network import LoRa
 import socket
 import time
 import ubinascii
-#import secrets
+import secrets
 
 # Initialise LoRa in LORAWAN mode.
 # Please pick the region that matches where you are using the device:
@@ -12,8 +12,8 @@ import ubinascii
 # United States = LoRa.US915
 lora = LoRa(mode=LoRa.LORAWAN, region=LoRa.EU868)
 
-APP_EUI='70B3D57ED001AB65'
-APP_KEY='BE6B69D0BFFE7F6A1D64A69BD7CCF1B3'
+APP_EUI=secrets.APP_EUI
+APP_KEY=secrets.APP_KEY
 
 # create an OTAA authentication parameters
 app_eui = ubinascii.unhexlify(APP_EUI)

@@ -2,3 +2,5 @@
 Adafruit/lora_configuration/ttn-otaa-feather/secrets.h
 Adafruit/lora_configuration/ttn-otaa/secrets.h
 Lopy4/secrets.py
+Lopy4/wireless_tests/secrets.py
+Lopy4/wireless_tests/run_lora_secrets.py
