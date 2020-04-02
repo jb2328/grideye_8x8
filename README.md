@@ -1,4 +1,4 @@
-## AMG8833 code repo for Arduino, Adafruit Feather, Pycom Lopi4 and Raspberry Pi
+## AMG8833 code repo for Arduino, Adafruit Feather, Pycom Lopy4 and Raspberry Pi
 ### grideye_8x8
 
 The repo is subdivided into four directories, one for each device. Each of the four directories contain useful URLs and brief guide to get the [AMG8833](https://www.adafruit.com/product/3538) sensor running along with example code.
