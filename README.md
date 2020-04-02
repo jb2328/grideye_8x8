@@ -29,12 +29,9 @@ The code is using linear interpolation between colors to create smooth transitio
 
 `...matrix.Color( 12 , 92 , 89 ),
  matrix.Color( 12 , 92 , 83 ),
- matrix.Color( 12 , 93 , 78 ),
- matrix.Color( 12 , 93 , 73 ),
- matrix.Color( 11 , 93 , 68 ),
- matrix.Color( 11 , 93 , 62 )...`
+ matrix.Color( 12 , 93 , 78 )...`
 
-That can be pasted into the code.
+Then it can be pasted into the code as an array for the aforementioned devices.
 
 #### Entire color scheme:
 ![palette](images/color_scheme.png "color_scheme")
