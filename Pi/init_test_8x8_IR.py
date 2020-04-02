@@ -4,7 +4,7 @@ import board
 import adafruit_amg88xx
 i2c = busio.I2C(board.SCL, board.SDA)
 amg = adafruit_amg88xx.AMG88XX(i2c)#had to modify smbus.py
-#        reg = c_uint8(int.from_bytes(cmd, byteorder='big', signed=False)
+#reg = c_uint8(int.from_bytes(cmd, byteorder='big', signed=False)
 while True:
     for row in amg.pixels:
     # Pad to 1 decimal place
