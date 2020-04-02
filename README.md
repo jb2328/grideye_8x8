@@ -7,11 +7,23 @@ Adafruit AMG8833 and DotStar 8x8:
 
 ![amg8833](images/amg8833.png "Adafruit amg8833") ![led_matrix](images/dotstar.png "Adafruit DotStar")
 
-
-
 To quickly and easily visualise the output of the sensor [Adafruit DotStar 8x8 LED matrix](https://www.adafruit.com/product/3444) was used. The main reason for using this LED matrix as opposed to and LCD screen was connectivity interfaces. AMG8833 uses an I2C interface (as do a lot of LCD displays for RPi/Arduino etc) and the LED matrix had an SPI interface that enabled cleaner and more effcient prototyping.
 
 Lastly, using the LED matrix was a lot faster than just using a Serial.print() to check the latency on all of the tested devices.
+
+---
+### Quick links to other READMEs
+This repo has more detailed READMEs in specific board directories.
+
+[Adafruit Feather M0](https://github.com/jb2328/grideye_8x8/tree/master/Adafruit)
+
+[Arduino (Uno)](https://github.com/jb2328/grideye_8x8/tree/master/Arduino)
+
+[Pycom Lopy4](https://github.com/jb2328/grideye_8x8/tree/master/Lopy4)
+
+[Raspberry Pi](https://github.com/jb2328/grideye_8x8/tree/master/Pi)
+
+---
 
 ### Code structure
 
@@ -36,11 +48,15 @@ Then it can be pasted into the code as an array for the aforementioned devices.
 #### Entire color scheme:
 ![palette](images/color_scheme.png "color_scheme")
 
+[More information here](https://github.com/jb2328/grideye_8x8/tree/master/Processing).
+
 [More about Processing](https://processing.org/)
 
 --- 
 
-### gifs
+### Gifs
+Differences in display colors are due to different recording conditions/slight changes in the color palette.
+
 #### Raspberry Pi: 
 
 ![RPi](images/RPi.gif "RPi-amg833")
