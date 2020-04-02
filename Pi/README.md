@@ -24,15 +24,22 @@ DotStar 8x8 LED matrix
 **AMG8833:**
 
 `SCL` goes to `SCL` @ `GPIO3` | I2C
+
 `SDA` goes to `SDA` @ `GPIO2` | I2C
+
 `VIN` goes to `5V`
+
 `GND` goes to `Ground`
 
 **8x8 Matrix:**
 
 `CI` goes to `SCK` @ `GPIO11` | SPI
+
+
 `DI` goes to `MOSI` @ `GPI10` | SPI
+
 `VIN` goes to `5V`
+
 `GND` goes to `Ground`
 
 #### Possible issues
